@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="project.css">
+    <title>RU Membership - RU Health and Fitness</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+        <div class="container-fluid" style="padding-left: 50px; padding-right: 50px;">
+            <!--LOGO-->
+            <a class="navbar-brand" href="index.html">
+                <img src="RU.jpeg" alt="RU" style="height: 100px; width: 200px;">
+            </a>
+            <!--Navbar button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--NAVBAR MENU ITEMS-->
+            <div class="collapse navbar-collapse bg-dark justify-content-around" id="mynavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active p-3">
+                        <a class="nav-link active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown p-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">ABOUT</a>
+                        <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item" style="color: white;">Mission & Vision</a></li>
+                            <li><a href="#" class="dropdown-item" style="color: white;">Coaches</a></li>
+                            <li><a href="#" class="dropdown-item" style="color: white;">Trainers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="Services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#">BLOGS</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                </ul>
+                <!--JOIN US BUTTON-->
+                <a href="membership.html" class="text-decoration-none text-light">
+                    <button type="button" class="btn btn-lg btn-danger" style="font-size: 16px;">MEMBERSHIP</button>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <div class="container-fluid p-0 text-light" style="position: relative;">
+        <img class="membership-image" src="https://images.unsplash.com/photo-1614928228253-dc09cbc3b11c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+        <div class="container p-0" style="position: absolute; top: 40%; left: 50px;">
+            <h1>ONLINE MEMBERSHIP</h1>
+        </div>
+    </div>
+
+    <!--MEMBERSHIP FORM-->
+    <div class="container fw-bold text-danger mt-5">
+        <h2>ONLINE MEMBERSHIP FORM</h2>
+        <form>
+            <!--FIRST NAME-->
+            <label for="fname">First Name</label><br>
+            <input class="w-75 p-2 m-2" type="text" id="fname" placeholder="Enter your first Name"><br>
+
+            <!--LAST NAME-->
+            <label for="lname">Last Name</label><br>
+            <input class="w-75 p-2 m-2" type="text" id="lname" placeholder="Enter your last Name"><br>
+
+            <!--PHYSICAL ADDRESS-->
+            <label for="adress">Address</label><br>
+            <input class="w-75 p-2 m-2" type="text" id="adress" placeholder="Enter your Address"><br>
+
+            <!--EMAIL ADDRESS-->
+            <label for="ruemail">Email</label><br>
+            <input class="w-75 p-2 m-2" type="email" id="ruemail" placeholder="Enter email address"><br>
+            <label for="phone">Phone</label><br>
+            <input class="w-75 p-2 m-2" type="number" id="phone" placeholder="Enter phone number"><br>
+
+            <!--GENDER-->
+            Gender<br>
+            <input type="radio" name="gender" class="m-2" id="Male">
+            <label for="Male" class="text-light p-2 ">Male</label><br>
+
+            <input type="radio" name="gender" class="m-2" id="Female">
+            <label for="Female" class="text-light p-2 ">Female</label><br>
+
+            <!--YOUR CURRENT WEIGHT-->
+            <label for="cweight">Your current weight (lbs)</label><br>
+            <input type="text" class="w-75 p-2 m-2" id="cweight" placeholder="Enter your current weight"><br>
+
+            <!--YOUR DESIRED WEIGHT-->
+            <label for="dweight">Desired weight (lbs)</label><br>
+            <input type="text" class="w-75 p-2 m-2" id="dweight" placeholder="Enter your desired weight"><br>
+
+            <!--HEIGHT-->
+            <label for="height">Height</label><br>
+            <input type="text" class="w-75 p-2 m-2" id="height" placeholder="Enter height"><br>
+
+            <!--BMI-->
+            <label for="BMI">BMI</label><br>
+            <input type="text" class="w-75 p-2 m-2" id="BMI" placeholder="Enter BMI"><br>
+
+            <!--PERSONAL TRAINER-->
+            Do you require a personal trainer?<br>
+
+            <input type="radio" name="PTrainer" class="m-2" id="PTrainer_Y">
+            <label for="PTrainer_Y" class="text-light p-2 ">Yes</label><br>
+
+            <input type="radio" name="PTrainer" class="m-2" id="PTrainer_N">
+            <label for="PTrainer_N" class="text-light p-2 ">No</label><br>
+
+            <!--HAVE YOU EVER BEEN TO THE GYM-->
+            Have you been in a Gym before?<br>
+
+            <input type="radio" name="BF_GYM" class="m-2" id="BF_Y">
+            <label for="BF_Y" class="text-light p-2 ">Yes</label><br>
+
+            <input type="radio" name="BF_GYM" class="m-2" id="BF_N">
+            <label for="BF_N" class="text-light p-2 ">No</label><br>
+
+            <!--MEMBERSHIP TYPE-->
+            Membership Type<br>
+            <input type="radio" name="m_type" class="m-2" id="REG">
+            <label for="REG" class="text-light p-2 ">Regular</label><br>
+
+            <input type="radio" name="m_type" class="m-2" id="PRO">
+            <label for="PRO" class="text-light p-2 ">PRO</label><br>
+
+            <input type="radio" name="m_type" class="m-2" id="VIP">
+            <label for="VIP" class="text-light p-2 ">VIP</label><br>
+
+            <!--MEMBERSHIP DURATION-->
+            Membership Duration<br>
+
+            <input type="radio" name="mduration" class="m-2" id="1_M">
+            <label for="1_M" class="text-light p-2 ">1 Month</label><br>
+
+            <input type="radio" name="mduration" class="m-2" id="3_M">
+            <label for="3_M" class="text-light p-2 ">3 Months</label><br>
+
+            <input type="radio" name="mduration" class="m-2" id="6_M">
+            <label for="6_M" class="text-light p-2 ">6 Months</label><br>
+
+            <input type="radio" name="mduration" class="m-2" id="1_Y">
+            <label for="1_Y" class="text-light p-2 ">1 Year</label><br>
+
+            <input type="radio" name="mduration" class="m-2" id="2_Y">
+            <label for="2_Y" class="text-light p-2 ">2 Year</label><br>
+
+            <input type="radio" name="mduration" class="m-2" id="Lifetime">
+            <label for="Lifetime" class="text-light p-2 ">Lifetime</label><br>
+            <!--PAYMENT TYPE-->
+            Payment Type<br>
+
+            <input type="radio" name="Payment" class="m-2" id="Cash">
+            <label for="Cash" class="text-light p-2 ">Cash in full</label><br>
+
+            <input type="radio" name="Payment" class="m-2" id="Debit">
+            <label for="Debit" class="text-light p-2 ">Direct Debit</label><br>
+
+            <input type="radio" name="Payment" class="m-2" id="Credit">
+            <label for="Credit" class="text-light p-2">Credit Card</label><br>
+
+            <input type="radio" name="Payment" class="m-2" id="Cheque">
+            <label for="Cheque" class="text-light p-2">Cheque</label><br>
+
+            <!--APPLY BUTTON-->
+            <button type="button" class="btn bg-danger text-light">Apply</button><br><br>
+        </form>
+    </div>
+
+    <footer class="footer bg-dark">
+        <!--FOOTER TOP-->
+        <div class="container-fluid p-5">
+            <div class="row">
+                <!--CONTACTS-->
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <h3 class="text-danger">Contact Us</h3>
+                    <ul class="footer-list list-unstyled">
+                        <li class="footer-item">
+                            <form>
+                                <input type="text" class="form-control text-light bg-dark w-75  mt-2"
+                                    placeholder="Name">
+                                <input type="email" class="form-control text-light bg-dark w-75 mt-2"
+                                    aria-describedby="emailHelp" placeholder="Email">
+                                <textarea class="form-control text-light bg-dark w-75  mt-2" rows="5"
+                                    placeholder="Your message"></textarea>
+                                <button type="submit" class="btn btn-danger mt-2 mb-2">SUBMIT</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!--Quick links-->
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <h3 class="text-danger">Quick links</h3>
+                    <ul class="footer-list list-unstyled text-light">
+                        <li class="footer-item"><a href="#" class="footer-link">Events</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Media</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Members zone</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Training Programme</a></li>
+                    </ul>
+                </div>
+                <!--Work hours-->
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <h3 class="text-danger">Work Hours</h3>
+                    <ul class="footer-list list-unstyled text-light">
+                        <li class="footer-item">Opening Days :</li>
+                        <li class="footer-item">Monday - Friday : 9am to 4pm</li>
+                        <li class="footer-item">Saturday : 9am to 17 pm</li>
+                        <li class="footer-item">Sunday : Holidays Days</li>
+                    </ul>
+                </div>
+                <!--Contacts-->
+                <div class="col-lg-3 col-sm-12 col-12">
+                    <h3 class="text-danger">Our Location</h3>
+                    <ul class="footer-list list-unstyled text-light">
+                        <li class="footer-item">
+                            <p>Demo 23, 2 Dlizabeth St, Melbourne, Victoria 3000</p>
+                        </li>
+                        <li class="footer-item"><i class="bi bi-telephone"></i>&nbsp;&nbsp;+87 (3) 3 6376 5284</li>
+                        <li class="footer-item"><i class="bi bi-globe"></i>&nbsp;&nbsp;web@project.com</li><br>
+                        <li class="footer-item" style="font-size: 24px;">
+                            <h4 class="text-danger">Follow Us</h4>
+                            <a href="#"><i class="bi bi-twitter p-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook p-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram p-1"></i></a>
+                            <a href="#"><i class="bi bi-youtube p-1"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--BOTTOM OF PAGE-->
+        <div class="container-fluid text-secondary" style="background-color: black;">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center"">
+                    <div>
+                    &copy;2022 <a href=" index.html" class="text-danger">Health and Fitness.</a> All Rights
+                    Reserved.
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+                <div>
+                    <a href="#" class="bottom-link pl-2 pr-2">Terms and
+                        condition</a>
+                    <a href="#" class="bottom-link pl-2 pr-2">FAQ</a>
+                    <a href="#" class="bottom-link pl-2 pr-2">Privacy
+                        policy</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
